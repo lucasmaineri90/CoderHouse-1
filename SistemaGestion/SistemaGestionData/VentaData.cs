@@ -12,17 +12,14 @@ namespace SistemaGestionUI.SistemaGestionData
     public class VentaData
     {
 
+        private static string connectionString = @"Server=. ; Database =C#; Trusted_Connection=True;";
         public static Venta ObtenerVenta(int Id)
         {
-
-
-            GestionBaseDeDatos db = new GestionBaseDeDatos();
-
 
             string query = "SELECT Id, Comentarios, IdUsuario FROM Venta WHERE Id=@Id;";
 
 
-            using (SqlConnection conexion = new SqlConnection(db.connectionString))
+            using (SqlConnection conexion = new SqlConnection(connectionString))
             {
                 conexion.Open();
                 // se usa el comando que esta asociada a la query conectada a la conexion
@@ -62,12 +59,9 @@ namespace SistemaGestionUI.SistemaGestionData
 
             List<Venta> lista1 = new List<Venta>();
 
-            GestionBaseDeDatos db = new GestionBaseDeDatos();
-
-
             string query = "SELECT Id, Comentarios, IdUsuario from Venta";
 
-            using (SqlConnection conexion = new SqlConnection(db.connectionString))
+            using (SqlConnection conexion = new SqlConnection(connectionString))
             {
                 conexion.Open();
                 // se usa el comando que esta asociada a la query conectada a la conexion
@@ -100,13 +94,11 @@ namespace SistemaGestionUI.SistemaGestionData
         public static void CrearVenta(Venta venta)
         {
 
-            GestionBaseDeDatos db = new GestionBaseDeDatos();
-
 
             string query = "INSERT INTO Venta (Comentarios, IdUsuario) " +
                 "VALUES (@Comentarios, @IdUsuario);";
 
-                using (SqlConnection conexion = new SqlConnection(db.connectionString))
+                using (SqlConnection conexion = new SqlConnection(connectionString))
                 {
                     conexion.Open();
                     using (SqlCommand comando = new SqlCommand(query, conexion))
@@ -128,13 +120,11 @@ namespace SistemaGestionUI.SistemaGestionData
 
         public static void ModificarVenta(int idVenta, Venta venta)
         {
-            GestionBaseDeDatos db = new GestionBaseDeDatos();
-
 
             string query = "UPDATE Venta SET Comentarios=@Comentarios, IdUsuario=@IdUsuario" +
                 " WHERE Id=@Id";
 
-                using (SqlConnection conexion = new SqlConnection(db.connectionString))
+                using (SqlConnection conexion = new SqlConnection(connectionString))
                 {
                     conexion.Open();
                     using (SqlCommand comando = new SqlCommand(query, conexion))
@@ -161,14 +151,13 @@ namespace SistemaGestionUI.SistemaGestionData
 
         public static void EliminarVenta(int Id)
         {
-            GestionBaseDeDatos db = new GestionBaseDeDatos();
 
 
             string query = "DELETE FROM Venta WHERE Id=@Id";
 
             // se usa la conexion que esta asociada a la connectionstring
 
-                using (SqlConnection conexion = new SqlConnection(db.connectionString))
+                using (SqlConnection conexion = new SqlConnection(connectionString))
                 {
                     conexion.Open();
                     // se usa el comando que esta asociada a la query conectada a la conexion

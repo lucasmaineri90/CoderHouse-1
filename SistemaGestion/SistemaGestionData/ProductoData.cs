@@ -12,16 +12,17 @@ namespace SistemaGestionUI.SistemaGestionData
     public class ProductoData
     {
 
+        private static string  connectionString = @"Server=. ; Database =C#; Trusted_Connection=True;";
+
+
         public static Producto ObtenerProducto(int IdProducto)
         {
-
-           GestionBaseDeDatos db = new GestionBaseDeDatos();
-
+  
 
             string query = "SELECT Id, Descripciones, Costo, PrecioVenta, Stock, IdUsuario from dbo.Producto WHERE Id=@IdProducto;";
 
             // se usa la conexion que esta asociada a la connectionstring
-            using (SqlConnection conexion = new SqlConnection(db.connectionString))
+            using (SqlConnection conexion = new SqlConnection(connectionString))
             {
                 conexion.Open();
                 // se usa el comando que esta asociada a la query conectada a la conexion
@@ -64,12 +65,9 @@ namespace SistemaGestionUI.SistemaGestionData
             List<Producto> lista1 = new List<Producto>();
 
 
-            GestionBaseDeDatos db = new GestionBaseDeDatos();
-
-
             string query = "SELECT Id, Descripciones, Costo, PrecioVenta, Stock, IdUsuario from dbo.Producto;";
 
-            using (SqlConnection conexion = new SqlConnection(db.connectionString))
+            using (SqlConnection conexion = new SqlConnection(connectionString))
             {
                 conexion.Open();
                 // se usa el comando que esta asociada a la query conectada a la conexion
@@ -103,15 +101,11 @@ namespace SistemaGestionUI.SistemaGestionData
         public static void CrearProducto(Producto producto)
         {
 
-            GestionBaseDeDatos db = new GestionBaseDeDatos();
-
 
             string query = "INSERT INTO producto (Descripciones, Costo, PrecioVenta, Stock, IdUsuario) " +
                 "VALUES (@Descripciones, @Costo, @PrecioVenta, @Stock, @IdUsuario) ;";
 
-            try
-            {
-                using (SqlConnection conexion = new SqlConnection(db.connectionString))
+                using (SqlConnection conexion = new SqlConnection(connectionString))
                 {
                     conexion.Open();
                     using (SqlCommand comando = new SqlCommand(query, conexion))
@@ -130,23 +124,17 @@ namespace SistemaGestionUI.SistemaGestionData
                     }
                     conexion.Close();
                 }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("No se pudo crear el producto " + ex.Message);
-            }
         }
 
 
-        public static void ModificarProducto(int IdProducto, Producto producto)
+        public static void ModificarProducto(int IdProducto, Producto producto) 
         {
-            GestionBaseDeDatos db = new GestionBaseDeDatos();
 
 
             string query = "UPDATE producto SET Descripciones=@Descripciones, Costo=@Costo, PrecioVenta=@PrecioVenta, Stock=@Stock, IdUsuario=@IdUsuario " +
                 "WHERE Id=@Id ;";
 
-            using (SqlConnection conexion = new SqlConnection(db.connectionString))
+            using (SqlConnection conexion = new SqlConnection(connectionString))
             {
                 conexion.Open();
                 using (SqlCommand comando = new SqlCommand(query, conexion))
@@ -177,15 +165,12 @@ namespace SistemaGestionUI.SistemaGestionData
 
         public static void EliminarProducto(int IdProducto)
         {
-            GestionBaseDeDatos db = new GestionBaseDeDatos();
 
 
             string query = "DELETE FROM producto WHERE Id=@IdProducto";
 
             // se usa la conexion que esta asociada a la connectionstring
-            try
-            {
-                using (SqlConnection conexion = new SqlConnection(db.connectionString))
+                using (SqlConnection conexion = new SqlConnection(connectionString))
                 {
                     conexion.Open();
                     // se usa el comando que esta asociada a la query conectada a la conexion
@@ -205,14 +190,8 @@ namespace SistemaGestionUI.SistemaGestionData
                     }
                     conexion.Close();
                 }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("No se pudo eliminar el producto " + ex.Message);
-            }
-
-
         }
+
 
     }
 }
