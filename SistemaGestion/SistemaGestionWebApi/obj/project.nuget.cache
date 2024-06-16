@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W7zlI+yVIb9qEB8UfOxHqc2FnBLKWVJTe4Y9oGUwbTaQ1fe8oOzFxQdpLk+qJX+R8yr5C313Ks9F3Ksm+gAx5Q==",
+  "dgSpecHash": "psSpGT/STi0Ay7NtzuzDSS2rZn6W6pSuxETuuB1i6N6kJCsXXOl8iOxQP07fry8q6GBodkx4cZRMVKtcqqTGEA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jmaineri\\OneDrive - BIT\\Escritorio\\Curso\\Coder House -C#\\EntregaCoder\\SistemaGestion\\SistemaGestionWebApi\\SistemaGestionWebApi.csproj",
+  "projectFilePath": "C:\\Users\\jmaineri\\OneDrive - BIT\\Escritorio\\Curso\\Coder House -C#\\Git_Hub\\CoderHouse\\SistemaGestion\\SistemaGestionWebApi\\SistemaGestionWebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jmaineri\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\jmaineri\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

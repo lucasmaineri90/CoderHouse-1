@@ -98,7 +98,7 @@ namespace SistemaGestionUI.SistemaGestionData
             return lista1;
         }
 
-        public static void CrearProducto(Producto producto)
+        public static bool CrearProducto(Producto producto)
         {
 
 
@@ -117,17 +117,14 @@ namespace SistemaGestionUI.SistemaGestionData
                         comando.Parameters.Add(new SqlParameter("Stock", SqlDbType.Int) { Value = producto.Stock });
                         comando.Parameters.Add(new SqlParameter("IdUsuario", SqlDbType.VarChar) { Value = producto.IdUsuario });
 
-                        using (SqlDataReader dr = comando.ExecuteReader())
-                        {
 
-                        }
+                        return comando.ExecuteNonQuery() > 0;
                     }
-                    conexion.Close();
                 }
         }
 
 
-        public static void ModificarProducto(int IdProducto, Producto producto) 
+        public static bool ModificarProducto(int IdProducto, Producto producto) 
         {
 
 
@@ -153,17 +150,13 @@ namespace SistemaGestionUI.SistemaGestionData
                     comando.Parameters.Add(new SqlParameter("Stock", SqlDbType.Int) { Value = producto.Stock });
                     comando.Parameters.Add(new SqlParameter("IdUsuario", SqlDbType.VarChar) { Value = producto.IdUsuario });
 
-                    using (SqlDataReader dr = comando.ExecuteReader())
-                    {
-
-                    }
+                    return comando.ExecuteNonQuery() > 0;
                 }
-                conexion.Close();
             }
         }
 
 
-        public static void EliminarProducto(int IdProducto)
+        public static bool EliminarProducto(int IdProducto)
         {
 
 
@@ -182,13 +175,10 @@ namespace SistemaGestionUI.SistemaGestionData
                         Resultado.Value = IdProducto;
                         comando.Parameters.Add(Resultado);
 
-                        using (SqlDataReader dataReader = comando.ExecuteReader())
-                        {
 
-                        }
+                        return comando.ExecuteNonQuery() > 0;
 
                     }
-                    conexion.Close();
                 }
         }
 

@@ -96,7 +96,7 @@ namespace SistemaGestionUI.SistemaGestionData
             return lista1;
         }
 
-        public static void CrearProductoVendido(ProductoVendido productovendido)
+        public static bool CrearProductoVendido(ProductoVendido productovendido)
         {
 
 
@@ -114,17 +114,13 @@ namespace SistemaGestionUI.SistemaGestionData
                         comando.Parameters.Add(new SqlParameter("IdProducto", SqlDbType.BigInt) { Value = productovendido.IdProducto });
                         comando.Parameters.Add(new SqlParameter("IdVenta", SqlDbType.BigInt) { Value = productovendido.IdVenta });
 
-                        using (SqlDataReader dr = comando.ExecuteReader())
-                        {
-
-                        }
+                        return comando.ExecuteNonQuery() > 0;
                     }
-                    conexion.Close();
                 }
 
         }
 
-        public static void ModificarProductoVendido(int Id, ProductoVendido productovendido)
+        public static bool ModificarProductoVendido(int Id, ProductoVendido productovendido)
         {
 
 
@@ -148,15 +144,15 @@ namespace SistemaGestionUI.SistemaGestionData
                         comando.Parameters.Add(new SqlParameter("IdProducto", SqlDbType.Int) { Value = productovendido.IdProducto });
                         comando.Parameters.Add(new SqlParameter("IdVenta", SqlDbType.Int) { Value = productovendido.IdVenta });
 
-                    SqlDataReader dr = comando.ExecuteReader();
-                             
+                        return comando.ExecuteNonQuery() > 0;
+
                     }
                     conexion.Close();
                 }
 
         }
 
-        public static void EliminarProductoVendido(int IdProductoVendido)
+        public static bool EliminarProductoVendido(int IdProductoVendido)
         {
 
             string query = "DELETE FROM productovendido WHERE IdProducto=@IdProducto";
@@ -175,13 +171,9 @@ namespace SistemaGestionUI.SistemaGestionData
                         Resultado.Value = IdProductoVendido;
                         comando.Parameters.Add(Resultado);
 
-                        using (SqlDataReader dataReader = comando.ExecuteReader())
-                        {
-
-                        }
+                        return comando.ExecuteNonQuery() > 0;
 
                     }
-                    conexion.Close();
                 } 
 
         }

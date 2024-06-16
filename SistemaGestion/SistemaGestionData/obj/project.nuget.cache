@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iaQ55Gd+4aDxVTjmsshTNlAHgjPcMOVKQwNrTv4wA+rnkxICkyD2hkKrIkoL5IsRHm7Fc1RLC/4nkzsxiuSasw==",
+  "dgSpecHash": "1tRP5l0YGQiRzBCQ82ihzVLVVTOtz8vetxnTJdsvemKMcKMC4ghaRT4vVEPOIGkwVYH9CfaiLenm7ZSJHuT3Qw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jmaineri\\OneDrive - BIT\\Escritorio\\Curso\\Coder House -C#\\EntregaCoder\\SistemaGestion\\SistemaGestionData\\SistemaGestionData.csproj",
+  "projectFilePath": "C:\\Users\\jmaineri\\OneDrive - BIT\\Escritorio\\Curso\\Coder House -C#\\Git_Hub\\CoderHouse\\SistemaGestion\\SistemaGestionData\\SistemaGestionData.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jmaineri\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\jmaineri\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

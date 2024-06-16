@@ -21,5 +21,25 @@ namespace SistemaGestionWebApi.Controllers
             Producto producto = ProductoBussiness.ObtenerProducto(Id);
             return Ok(producto);
         }
+
+        [HttpDelete(Name = "EliminarProducto")]
+        public void Delete([FromBody] int id)
+        {
+            ProductoBussiness.EliminarProducto(id);
+        }
+
+        [HttpPut(Name = "ModificarProducto")]
+
+        //public void Put([FromBody] Usuario usuario)
+        //{
+        //    UsuarioBussiness.ModificarUsuario(usuario);
+
+        //}
+
+        [HttpPost(Name = "AltaProducto")]
+        public void Post([FromBody] Producto producto)
+        {
+            ProductoBussiness.CrearProducto(producto);
+        }
     }
 }

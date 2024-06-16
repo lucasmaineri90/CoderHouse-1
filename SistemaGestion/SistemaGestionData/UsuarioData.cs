@@ -93,7 +93,7 @@ namespace SistemaGestionUI.SistemaGestionData
             return lista1;
         }
 
-        public  static void CrearUsuario(Usuario usuario)
+        public  static bool CrearUsuario(Usuario usuario)
         {
 
 
@@ -102,7 +102,7 @@ namespace SistemaGestionUI.SistemaGestionData
 
             SqlConnection conexion = new SqlConnection(connectionString);
 
-            conexion.Open();
+            
             using (SqlCommand comando = new SqlCommand(query, conexion))
             {
                 comando.Parameters.Add(new SqlParameter("Nombre", SqlDbType.VarChar) { Value = usuario.Nombre });
@@ -110,17 +110,14 @@ namespace SistemaGestionUI.SistemaGestionData
                 comando.Parameters.Add(new SqlParameter("NombreUsuario", SqlDbType.VarChar) { Value = usuario.NombreUsuario });
                 comando.Parameters.Add(new SqlParameter("Contraseña", SqlDbType.VarChar) { Value = usuario.Contraseña });
                 comando.Parameters.Add(new SqlParameter("Mail", SqlDbType.VarChar) { Value = usuario.Mail });
+                conexion.Open();
 
-                using (SqlDataReader dr = comando.ExecuteReader())
-                {
-
-                }
+                return comando.ExecuteNonQuery() > 0;
             }
-            conexion.Close();
         }
 
 
-        public  static void ModificarUsuario(int Id, Usuario usuario)
+        public  static bool ModificarUsuario(int Id, Usuario usuario)
         {
 
 
@@ -146,17 +143,14 @@ namespace SistemaGestionUI.SistemaGestionData
                     comando.Parameters.Add(new SqlParameter("Contraseña", SqlDbType.VarChar) { Value = usuario.Contraseña });
                     comando.Parameters.Add(new SqlParameter("Mail", SqlDbType.VarChar) { Value = usuario.Mail });
 
-                    using (SqlDataReader dr = comando.ExecuteReader())
-                    {
-
-                    }
+                    return comando.ExecuteNonQuery() > 0;
                 }
-                conexion.Close();
+             
             }
         }
 
 
-        public  static void EliminarUsuario(int Id)
+        public  static bool EliminarUsuario(int Id)
         {
 
             string query = "DELETE FROM Usuario WHERE Id=@Id";
@@ -175,14 +169,12 @@ namespace SistemaGestionUI.SistemaGestionData
                     Resultado.Value = Id;
                     comando.Parameters.Add(Resultado);
 
-                    using (SqlDataReader dataReader = comando.ExecuteReader())
-                    {
-
-                    }
+                    return comando.ExecuteNonQuery() > 0;
+                    
 
                 }
-                conexion.Close();
             }
+
         }
     }
 }

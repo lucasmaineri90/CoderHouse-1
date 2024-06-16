@@ -91,7 +91,7 @@ namespace SistemaGestionUI.SistemaGestionData
             return lista1;
         }
 
-        public static void CrearVenta(Venta venta)
+        public static bool CrearVenta(Venta venta)
         {
 
 
@@ -108,17 +108,13 @@ namespace SistemaGestionUI.SistemaGestionData
                         comando.Parameters.Add(new SqlParameter("Comentarios", SqlDbType.VarChar) { Value = venta.Comentarios });
                         comando.Parameters.Add(new SqlParameter("IdUsuario", SqlDbType.BigInt) { Value = venta.IdUsuario });
 
-                        using (SqlDataReader dr = comando.ExecuteReader())
-                        {
-
-                        }
+                       return comando.ExecuteNonQuery() > 0;
                     }
-                    conexion.Close();
                 }
 
         }
 
-        public static void ModificarVenta(int idVenta, Venta venta)
+        public static bool ModificarVenta(int idVenta, Venta venta)
         {
 
             string query = "UPDATE Venta SET Comentarios=@Comentarios, IdUsuario=@IdUsuario" +
@@ -139,17 +135,14 @@ namespace SistemaGestionUI.SistemaGestionData
                         comando.Parameters.Add(new SqlParameter("Comentarios", SqlDbType.VarChar) { Value = venta.Comentarios });
                         comando.Parameters.Add(new SqlParameter("IdUsuario", SqlDbType.BigInt) { Value = venta.IdUsuario });
 
-                        using (SqlDataReader dr = comando.ExecuteReader())
-                        {
-
-                        }
+                        return comando.ExecuteNonQuery() > 0;
                     }
-                    conexion.Close();
+                   
                 }
 
         }
 
-        public static void EliminarVenta(int Id)
+        public static bool EliminarVenta(int Id)
         {
 
 
@@ -169,13 +162,10 @@ namespace SistemaGestionUI.SistemaGestionData
                         Resultado.Value = Id;
                         comando.Parameters.Add(Resultado);
 
-                        using (SqlDataReader dataReader = comando.ExecuteReader())
-                        {
-
-                        }
+                        return comando.ExecuteNonQuery() > 0;
 
                     }
-                    conexion.Close();
+                    
                 }
            
         }

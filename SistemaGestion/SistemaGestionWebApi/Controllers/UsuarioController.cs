@@ -21,5 +21,25 @@ namespace SistemaGestionWebApi.Controllers
             Usuario usuario = UsuarioBussiness.ObtenerUsuario(Id);
             return Ok(usuario);
         }
+
+        [HttpDelete(Name = "EliminarUsuario")]
+        public void Delete([FromBody] int id)
+        {
+            UsuarioBussiness.EliminarUsuario(id);
+        }
+
+        [HttpPut(Name = "ModificarUsuario")]
+
+        //public void Put([FromBody] Usuario usuario)
+        //{
+        //    UsuarioBussiness.ModificarUsuario(usuario);
+
+        //}
+
+        [HttpPost(Name = "AltaUsuario")]
+        public void Post([FromBody] Usuario usuario)
+        {
+            UsuarioBussiness.CrearUsuario(usuario);
+        }
     }
 }
