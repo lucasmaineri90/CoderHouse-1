@@ -78,7 +78,7 @@ namespace SistemaGestionUI
 
             if (idProductoVendido > 0)
             {
-                ProductoVendidoBussiness.ModificarProductoVendido(idProductoVendido, newProdVend);
+                ProductoVendidoBussiness.ModificarProductoVendido(newProdVend);
                 MessageBox.Show("Se modifico el producto vendido");
 
             }

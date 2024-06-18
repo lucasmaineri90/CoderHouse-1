@@ -26,9 +26,9 @@ namespace SistemaGestionBussiness
             ProductoData.CrearProducto(producto);
         }
 
-        public static void ModificarProducto(int id, Producto producto)
+        public static void ModificarProducto(Producto producto)
         {
-            ProductoData.ModificarProducto(id, producto);
+            ProductoData.ModificarProducto(producto);
         }
 
         public static void EliminarProducto(int id)

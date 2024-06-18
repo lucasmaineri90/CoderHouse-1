@@ -64,7 +64,7 @@ namespace SistemaGestionUI
 
             if (idVenta > 0)
             {
-                VentaBussiness.ModificarVenta(IdUsuario, newVent);
+                VentaBussiness.ModificarVenta(newVent);
                 MessageBox.Show("Se modifico la venta");
 
             }

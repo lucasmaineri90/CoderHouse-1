@@ -7,12 +7,20 @@
       "RelativeMoniker": "D:0:0:{64B604D4-E690-408B-BE79-5BD2CE72C714}|SistemaGestionData\\SistemaGestionData.csproj|solutionrelative:sistemagestiondata\\productodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64B604D4-E690-408B-BE79-5BD2CE72C714}|SistemaGestionData\\SistemaGestionData.csproj|c:\\users\\jmaineri\\onedrive - bit\\escritorio\\curso\\coder house -c#\\git_hub\\coderhouse\\sistemagestion\\sistemagestiondata\\ventadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64B604D4-E690-408B-BE79-5BD2CE72C714}|SistemaGestionData\\SistemaGestionData.csproj|solutionrelative:sistemagestiondata\\ventadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6266C707-D9F4-4B65-93E9-24CA2D5D07AD}|SistemaGestionWebApi\\SistemaGestionWebApi.csproj|c:\\users\\jmaineri\\onedrive - bit\\escritorio\\curso\\coder house -c#\\git_hub\\coderhouse\\sistemagestion\\sistemagestionwebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6266C707-D9F4-4B65-93E9-24CA2D5D07AD}|SistemaGestionWebApi\\SistemaGestionWebApi.csproj|solutionrelative:sistemagestionwebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64B604D4-E690-408B-BE79-5BD2CE72C714}|SistemaGestionData\\SistemaGestionData.csproj|c:\\users\\jmaineri\\onedrive - bit\\escritorio\\curso\\coder house -c#\\git_hub\\coderhouse\\sistemagestion\\sistemagestiondata\\productovendidodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64B604D4-E690-408B-BE79-5BD2CE72C714}|SistemaGestionData\\SistemaGestionData.csproj|solutionrelative:sistemagestiondata\\productovendidodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6266C707-D9F4-4B65-93E9-24CA2D5D07AD}|SistemaGestionWebApi\\SistemaGestionWebApi.csproj|c:\\users\\jmaineri\\onedrive - bit\\escritorio\\curso\\coder house -c#\\git_hub\\coderhouse\\sistemagestion\\sistemagestionwebapi\\sistemagestionwebapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6266C707-D9F4-4B65-93E9-24CA2D5D07AD}|SistemaGestionWebApi\\SistemaGestionWebApi.csproj|solutionrelative:sistemagestionwebapi\\sistemagestionwebapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6266C707-D9F4-4B65-93E9-24CA2D5D07AD}|SistemaGestionWebApi\\SistemaGestionWebApi.csproj|c:\\users\\jmaineri\\onedrive - bit\\escritorio\\curso\\coder house -c#\\git_hub\\coderhouse\\sistemagestion\\sistemagestionwebapi\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6266C707-D9F4-4B65-93E9-24CA2D5D07AD}|SistemaGestionWebApi\\SistemaGestionWebApi.csproj|solutionrelative:sistemagestionwebapi\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A89C34C3-5721-4B37-94D8-16255AD6077E}|SistemaGestionUI\\SistemaGestionUI.csproj|c:\\users\\jmaineri\\onedrive - bit\\escritorio\\curso\\coder house -c#\\git_hub\\coderhouse\\sistemagestion\\sistemagestionui\\form8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A89C34C3-5721-4B37-94D8-16255AD6077E}|SistemaGestionUI\\SistemaGestionUI.csproj|solutionrelative:sistemagestionui\\form8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,35 +40,61 @@
               "RelativeDocumentMoniker": "SistemaGestionData\\ProductoData.cs",
               "ToolTip": "C:\\Users\\jmaineri\\OneDrive - BIT\\Escritorio\\Curso\\Coder House -C#\\Git_Hub\\CoderHouse\\SistemaGestion\\SistemaGestionData\\ProductoData.cs",
               "RelativeToolTip": "SistemaGestionData\\ProductoData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJsAAAAJAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T14:02:55.068Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductoVendidoData.cs",
-              "DocumentMoniker": "C:\\Users\\jmaineri\\OneDrive - BIT\\Escritorio\\Curso\\Coder House -C#\\Git_Hub\\CoderHouse\\SistemaGestion\\SistemaGestionData\\ProductoVendidoData.cs",
-              "RelativeDocumentMoniker": "SistemaGestionData\\ProductoVendidoData.cs",
-              "ToolTip": "C:\\Users\\jmaineri\\OneDrive - BIT\\Escritorio\\Curso\\Coder House -C#\\Git_Hub\\CoderHouse\\SistemaGestion\\SistemaGestionData\\ProductoVendidoData.cs",
-              "RelativeToolTip": "SistemaGestionData\\ProductoVendidoData.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAGIAAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T14:00:53.62Z",
+              "WhenOpened": "2024-06-18T20:22:44.383Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "VentaData.cs",
-              "DocumentMoniker": "C:\\Users\\jmaineri\\OneDrive - BIT\\Escritorio\\Curso\\Coder House -C#\\Git_Hub\\CoderHouse\\SistemaGestion\\SistemaGestionData\\VentaData.cs",
-              "RelativeDocumentMoniker": "SistemaGestionData\\VentaData.cs",
-              "ToolTip": "C:\\Users\\jmaineri\\OneDrive - BIT\\Escritorio\\Curso\\Coder House -C#\\Git_Hub\\CoderHouse\\SistemaGestion\\SistemaGestionData\\VentaData.cs",
-              "RelativeToolTip": "SistemaGestionData\\VentaData.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAF0AAAAyAAAA",
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\jmaineri\\OneDrive - BIT\\Escritorio\\Curso\\Coder House -C#\\Git_Hub\\CoderHouse\\SistemaGestion\\SistemaGestionWebApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "SistemaGestionWebApi\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\jmaineri\\OneDrive - BIT\\Escritorio\\Curso\\Coder House -C#\\Git_Hub\\CoderHouse\\SistemaGestion\\SistemaGestionWebApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "SistemaGestionWebApi\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-18T20:19:36.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SistemaGestionWebApi",
+              "DocumentMoniker": "C:\\Users\\jmaineri\\OneDrive - BIT\\Escritorio\\Curso\\Coder House -C#\\Git_Hub\\CoderHouse\\SistemaGestion\\SistemaGestionWebApi\\SistemaGestionWebApi.csproj",
+              "RelativeDocumentMoniker": "SistemaGestionWebApi\\SistemaGestionWebApi.csproj",
+              "ToolTip": "C:\\Users\\jmaineri\\OneDrive - BIT\\Escritorio\\Curso\\Coder House -C#\\Git_Hub\\CoderHouse\\SistemaGestion\\SistemaGestionWebApi\\SistemaGestionWebApi.csproj",
+              "RelativeToolTip": "SistemaGestionWebApi\\SistemaGestionWebApi.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-18T20:15:31.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\jmaineri\\OneDrive - BIT\\Escritorio\\Curso\\Coder House -C#\\Git_Hub\\CoderHouse\\SistemaGestion\\SistemaGestionWebApi\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "SistemaGestionWebApi\\Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\Users\\jmaineri\\OneDrive - BIT\\Escritorio\\Curso\\Coder House -C#\\Git_Hub\\CoderHouse\\SistemaGestion\\SistemaGestionWebApi\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "SistemaGestionWebApi\\Controllers\\ProductoController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T13:59:25.413Z",
+              "WhenOpened": "2024-06-18T20:15:37.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form8.cs",
+              "DocumentMoniker": "C:\\Users\\jmaineri\\OneDrive - BIT\\Escritorio\\Curso\\Coder House -C#\\Git_Hub\\CoderHouse\\SistemaGestion\\SistemaGestionUI\\Form8.cs",
+              "RelativeDocumentMoniker": "SistemaGestionUI\\Form8.cs",
+              "ToolTip": "C:\\Users\\jmaineri\\OneDrive - BIT\\Escritorio\\Curso\\Coder House -C#\\Git_Hub\\CoderHouse\\SistemaGestion\\SistemaGestionUI\\Form8.cs",
+              "RelativeToolTip": "SistemaGestionUI\\Form8.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAEMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T20:14:17.144Z",
               "EditorCaption": ""
             }
           ]

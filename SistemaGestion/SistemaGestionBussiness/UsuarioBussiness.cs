@@ -27,9 +27,9 @@ namespace SistemaGestionBussiness
             UsuarioData.CrearUsuario(usuario);
         }
 
-        public static void ModificarUsuario (int id, Usuario usuario)
+        public static void ModificarUsuario (Usuario usuario)
         {
-            UsuarioData.ModificarUsuario(id, usuario);
+            UsuarioData.ModificarUsuario(usuario);
 
         }
 

@@ -124,7 +124,7 @@ namespace SistemaGestionUI.SistemaGestionData
         }
 
 
-        public static bool ModificarProducto(int IdProducto, Producto producto) 
+        public static bool ModificarProducto(Producto producto) 
         {
 
 
@@ -137,12 +137,6 @@ namespace SistemaGestionUI.SistemaGestionData
                 using (SqlCommand comando = new SqlCommand(query, conexion))
 
                 {
-                    var Resultado = new SqlParameter();
-                    Resultado.ParameterName = "IdProducto";
-                    Resultado.SqlDbType = SqlDbType.Int;
-                    Resultado.Value = IdProducto;
-                    comando.Parameters.Add(Resultado);
-
                     comando.Parameters.Add(new SqlParameter("Id", SqlDbType.Int) { Value = producto.Id });
                     comando.Parameters.Add(new SqlParameter("Descripciones", SqlDbType.VarChar) { Value = producto.Descripcion });
                     comando.Parameters.Add(new SqlParameter("Costo", SqlDbType.Money) { Value = producto.Costo });

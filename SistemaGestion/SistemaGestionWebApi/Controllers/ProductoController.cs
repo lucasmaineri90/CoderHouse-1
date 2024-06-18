@@ -30,11 +30,11 @@ namespace SistemaGestionWebApi.Controllers
 
         [HttpPut(Name = "ModificarProducto")]
 
-        //public void Put([FromBody] Usuario usuario)
-        //{
-        //    UsuarioBussiness.ModificarUsuario(usuario);
+        public void Put([FromBody] Producto producto)
+        {
+            ProductoBussiness.ModificarProducto(producto);
 
-        //}
+        }
 
         [HttpPost(Name = "AltaProducto")]
         public void Post([FromBody] Producto producto)

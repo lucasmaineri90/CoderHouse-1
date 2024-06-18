@@ -117,7 +117,7 @@ namespace SistemaGestionUI.SistemaGestionData
         }
 
 
-        public  static bool ModificarUsuario(int Id, Usuario usuario)
+        public  static bool ModificarUsuario(Usuario usuario)
         {
 
 
@@ -131,12 +131,7 @@ namespace SistemaGestionUI.SistemaGestionData
                 using (SqlCommand comando = new SqlCommand(query, conexion))
 
                 {
-                    var Resultado = new SqlParameter();
-                    Resultado.ParameterName = "Id";
-                    Resultado.SqlDbType = SqlDbType.Int;
-                    Resultado.Value = Id;
-                    comando.Parameters.Add(Resultado);
-
+                    comando.Parameters.Add(new SqlParameter("Id", SqlDbType.VarChar) { Value = usuario.Id });
                     comando.Parameters.Add(new SqlParameter("Nombre", SqlDbType.VarChar) { Value = usuario.Nombre });
                     comando.Parameters.Add(new SqlParameter("Apellido", SqlDbType.VarChar) { Value = usuario.Apellido });
                     comando.Parameters.Add(new SqlParameter("NombreUsuario", SqlDbType.VarChar) { Value = usuario.NombreUsuario });
@@ -149,7 +144,7 @@ namespace SistemaGestionUI.SistemaGestionData
             }
         }
 
-
+      
         public  static bool EliminarUsuario(int Id)
         {
 

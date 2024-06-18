@@ -27,9 +27,9 @@ namespace SistemaGestionBussiness
             VentaData.CrearVenta(venta);
         }
 
-        public static void ModificarVenta(int id, Venta usuario)
+        public static void ModificarVenta(Venta usuario)
         {
-            VentaData.ModificarVenta(id, usuario);
+            VentaData.ModificarVenta(usuario);
 
         }
 

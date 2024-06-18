@@ -64,7 +64,7 @@ namespace SistemaGestionUI
 
             if (idUsuario > 0)
             {
-                UsuarioBussiness.ModificarUsuario(idUsuario, newUser);
+                UsuarioBussiness.ModificarUsuario(newUser);
                 MessageBox.Show("Se modifico el usuario");
 
             }

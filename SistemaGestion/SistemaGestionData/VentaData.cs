@@ -114,7 +114,7 @@ namespace SistemaGestionUI.SistemaGestionData
 
         }
 
-        public static bool ModificarVenta(int idVenta, Venta venta)
+        public static bool ModificarVenta(Venta venta)
         {
 
             string query = "UPDATE Venta SET Comentarios=@Comentarios, IdUsuario=@IdUsuario" +
@@ -126,12 +126,7 @@ namespace SistemaGestionUI.SistemaGestionData
                     using (SqlCommand comando = new SqlCommand(query, conexion))
 
                     {
-                        var Resultado = new SqlParameter();
-                        Resultado.ParameterName = "Id";
-                        Resultado.SqlDbType = SqlDbType.Int;
-                        Resultado.Value = idVenta;
-                        comando.Parameters.Add(Resultado);
-
+                        comando.Parameters.Add(new SqlParameter("Id", SqlDbType.VarChar) { Value = venta.Id });
                         comando.Parameters.Add(new SqlParameter("Comentarios", SqlDbType.VarChar) { Value = venta.Comentarios });
                         comando.Parameters.Add(new SqlParameter("IdUsuario", SqlDbType.BigInt) { Value = venta.IdUsuario });
 
