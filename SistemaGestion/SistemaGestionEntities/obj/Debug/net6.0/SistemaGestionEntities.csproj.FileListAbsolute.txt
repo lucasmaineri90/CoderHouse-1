@@ -22,3 +22,15 @@ C:\Users\jmaineri\OneDrive - BIT\Escritorio\Curso\Coder House -C#\Git_Hub\CoderH
 C:\Users\jmaineri\OneDrive - BIT\Escritorio\Curso\Coder House -C#\Git_Hub\CoderHouse\SistemaGestion\SistemaGestionEntities\obj\Debug\net6.0\refint\SistemaGestionEntities.dll
 C:\Users\jmaineri\OneDrive - BIT\Escritorio\Curso\Coder House -C#\Git_Hub\CoderHouse\SistemaGestion\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.pdb
 C:\Users\jmaineri\OneDrive - BIT\Escritorio\Curso\Coder House -C#\Git_Hub\CoderHouse\SistemaGestion\SistemaGestionEntities\obj\Debug\net6.0\ref\SistemaGestionEntities.dll
+C:\Users\Dj Tomi Pirchio\Desktop\pre-entrega\segundaentrega\CoderHouse\SistemaGestion\SistemaGestionEntities\bin\Debug\net6.0\SistemaGestionEntities.deps.json
+C:\Users\Dj Tomi Pirchio\Desktop\pre-entrega\segundaentrega\CoderHouse\SistemaGestion\SistemaGestionEntities\bin\Debug\net6.0\SistemaGestionEntities.dll
+C:\Users\Dj Tomi Pirchio\Desktop\pre-entrega\segundaentrega\CoderHouse\SistemaGestion\SistemaGestionEntities\bin\Debug\net6.0\SistemaGestionEntities.pdb
+C:\Users\Dj Tomi Pirchio\Desktop\pre-entrega\segundaentrega\CoderHouse\SistemaGestion\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dj Tomi Pirchio\Desktop\pre-entrega\segundaentrega\CoderHouse\SistemaGestion\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.AssemblyInfoInputs.cache
+C:\Users\Dj Tomi Pirchio\Desktop\pre-entrega\segundaentrega\CoderHouse\SistemaGestion\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.AssemblyInfo.cs
+C:\Users\Dj Tomi Pirchio\Desktop\pre-entrega\segundaentrega\CoderHouse\SistemaGestion\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.csproj.CoreCompileInputs.cache
+C:\Users\Dj Tomi Pirchio\Desktop\pre-entrega\segundaentrega\CoderHouse\SistemaGestion\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.sourcelink.json
+C:\Users\Dj Tomi Pirchio\Desktop\pre-entrega\segundaentrega\CoderHouse\SistemaGestion\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.dll
+C:\Users\Dj Tomi Pirchio\Desktop\pre-entrega\segundaentrega\CoderHouse\SistemaGestion\SistemaGestionEntities\obj\Debug\net6.0\refint\SistemaGestionEntities.dll
+C:\Users\Dj Tomi Pirchio\Desktop\pre-entrega\segundaentrega\CoderHouse\SistemaGestion\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.pdb
+C:\Users\Dj Tomi Pirchio\Desktop\pre-entrega\segundaentrega\CoderHouse\SistemaGestion\SistemaGestionEntities\obj\Debug\net6.0\ref\SistemaGestionEntities.dll

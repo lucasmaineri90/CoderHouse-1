@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using SistemaGestionBussiness;
 using SistemaGestionUI.SistemaGestionEntities;
-
+//aa
 namespace SistemaGestionWebApi.Controllers
 {
     [Route("api/[controller]")]
